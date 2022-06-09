@@ -14,13 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <Link href='/products'> Health Store</Link>
-
-          
-         
-
-
       </main>
-
     </div>
   )
 }

@@ -43,10 +43,7 @@ export const getServerSideProps = async (pageContext) => {
 	const url = `https://12xwl09v.api.sanity.io/v1/data/query/production?query=${query}`;
 
 	const product = await fetch(url).then(res => res.json());
-
 	const foundProduct = product.result[0];
-
-	console.log(foundProduct.defaultProductVariant.images[0]);
 
 	if(!product) {
 		return {
